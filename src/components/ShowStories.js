@@ -10,7 +10,7 @@ export const ShowStories = function(props) {
             {isLoading ? (
                 <p> Loading ... </p>
             ) : (
-                stories.map(story => 
+                stories.length > 0 && stories.map(story => 
                     <Story key={story.id} id={story.id} title={story.title} url={story.url} time={story.time} score={story.score} by={story.by} kids={story.kids}/>
                 )
             )}

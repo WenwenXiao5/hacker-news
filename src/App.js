@@ -1,9 +1,8 @@
 import './App.css';
-import { ShowStories } from './components/ShowStories';
+import { NavLink } from 'react-router-dom';
+import { AppRouter } from './router/AppRouter';
 
 function App() {
-  const type = 'top';
-
   return (
     <div className="App">
       <header className="App-header">
@@ -11,9 +10,14 @@ function App() {
           Thank you for the opportunity!
         </p>
         Hacker News
+        <div className='Nav'>
+          <NavLink to='/top' className='NavLink'> Top Stories </NavLink>
+          <NavLink to='/new' className='NavLink'> New Stories </NavLink>
+          <NavLink to='/best' className='NavLink'> Best Stories </NavLink>
+        </div>
       </header>
-      <div className="App-content">
-        <ShowStories type={type}/>
+      <div className='App-content'>
+        <AppRouter/>
       </div>
     </div>
   );

@@ -43,3 +43,17 @@
     transform: rotate(360deg);
   }
 }
+
+.Nav {
+  display: flex;
+  text-align: center;
+  margin: 10px;
+}
+
+.NavLink {
+  color: Blue;
+  background-color: silver;
+  text-decoration: none;
+  margin: 1rem;
+  position: relative;
+}

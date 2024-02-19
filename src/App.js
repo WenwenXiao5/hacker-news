@@ -1,16 +1,19 @@
 import './App.css';
+import { ShowStories } from './components/ShowStories';
 
 function App() {
+  const type = 'top';
+
   return (
     <div className="App">
       <header className="App-header">
         <p>
           Thank you for the opportunity!
         </p>
-        I am the header
+        Hacker News
       </header>
       <div className="App-content">
-        <p> I am the content </p>
+        <ShowStories type={type}/>
       </div>
     </div>
   );
